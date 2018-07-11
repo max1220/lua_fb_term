@@ -16,7 +16,7 @@ you should be able to drag the terminal window around.
 to get this to work, find out what /dev/input/event* devices your mouse and
 keyboard are, and edit the paths in these lines in test2.lua:
 
-```
+```lua
 local kbd = keyboard.open({
 	path = "/dev/input/event0",
 	nonblocking = true
@@ -33,7 +33,7 @@ The keyboard input is currently german only(You add a diffrent layout after
 implementing it by adding a table to the keyboard.open config parameter
 table via the layout key, e.g.:
 
-```
+```lua
 local kbd = keyboard.open({
 	path = "/dev/input/event0",
 	layout = require("keyboard_layout_english"),
@@ -72,7 +72,7 @@ Manages fonts. Has a global list of fonts and a global font cache.
 Generates lfb drawbuffers for font characters from bitmaps.
 Exports following functions:
 
-```
+```lua
 font:load_from_table(font_tbl)
 font:load_from_bmp(name, bmp_path, char_w, char_h, chars_x, chars_y)
 font:load_from_json(json_path, name)
@@ -95,7 +95,7 @@ Reads uinput for keys.
 Supports callbacks and event ques.
 exports only 1 function, kbd = keyboard.open(config_table).
 
-```
+```lua
 kbd:handle_ev(ev) -- mostly internal, handle a uinput ev
 kbd:update_one -- handle one uinput event(warning:slow)
 kbd:update -- handle all uinput events
@@ -119,14 +119,14 @@ renders a terminal, either to a drawbuffer or to another terminal using unicode
 braile characters.
 exports only 1 function:
 
-```
+```lua
 terminal.new(config_table)
 ```
 
 
 term functions:
 
-```
+```lua
 term:update_config(alternative_config) --call after updating the config
 term:render() --render to drawbuffer
 term:write(str) --write str to terminal
@@ -140,7 +140,7 @@ Implements mice support.
 Works like keyboard, except for mouse input.
 mouse functions:
 
-```
+```lua
 mouse:handle_ev(ev)
 x,y = mouse:get_pos() -- get integer position
 x,y = mouse:_get_pos() -- get precise position
