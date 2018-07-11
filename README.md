@@ -46,7 +46,7 @@ files
 -----
 
 
-##test2.lua
+## test2.lua
 
 currently the main executable.
 Loads up hardware wrappers(keyboard, mouse), and renders everything.
@@ -54,19 +54,19 @@ Loads up hardware wrappers(keyboard, mouse), and renders everything.
 
 
 
-##bg.bmp
+## bg.bmp
 
 Background image
 
 
 
-##pointer.bmp
+## pointer.bmp
 
 2 mouse pointer images, side by side (2x 8px*16px = 16px*16px)
 
 
 
-##font.lua
+## font.lua
 
 Manages fonts. Has a global list of fonts and a global font cache.
 Generates lfb drawbuffers for font characters from bitmaps.
@@ -85,7 +85,7 @@ font:_clear_cache([leave_top_n]) --clear cache [but leave to n entrys by access]
 
 
 
-##keyboard.lua
+## keyboard.lua
 
 implements the keycode mapper .
 Resolves keys based on it's modifier key states and the
@@ -106,13 +106,13 @@ kbd:clear_events()
 
 
 
-##keyboard_layout_german.lua
+## keyboard_layout_german.lua
 
 A keyboard layout is a mapping of uinput scancodes to tables determining return values for callbacks/events for each modifier(ctrl, shift, right alt).
 
 
 
-##terminal.lua
+## terminal.lua
 
 renders a terminal, either to a drawbuffer or to another terminal using unicode
 braile characters.
@@ -131,7 +131,7 @@ term:draw_unicode() --draws terminal to a unicode-terminal using braile chars
 
 
 
-##mice.lua
+## mice.lua
 Implements mice support.
 Works like keyboard, except for mouse input.
 mouse functions:
@@ -156,42 +156,63 @@ I use many diffrent C and lua librarys, some external, some developed by me,
 and some developed for this project. Some of the files above could be
 used as librarys.
 
-##7x12b.bmp, 7x12.bmp, cga.bmp, lcd.bmp
+## 7x12b.bmp, 7x12.bmp, cga.bmp, lcd.bmp
+
 these files are used as fonts. Fonts are character tiles indexed from
 top left to right, bottom(starting at 0).
 
-##lua-tmt
+
+
+## lua-tmt
+
 This library is the future terminal emulation library.
 You can send it strings, and it interpretes them as terminal codes
 and updates it's cell matrix.
 Not currently used.
 
-##lua-time
+
+
+## lua-time
+
 My own library for timing-related stuff.provides up to accurate timing function.
 (get realtime/monotonic + accurate sleep)
 
 
-##lfb
+
+## lfb
+
 My own library for framebuffer and drawing related stuff(Not including loading
 bitmaps).
 Makes this thing work
 
-##lua-input
+
+
+## lua-input
+
 Get events from /dev/input/event* (kernel uinput), used to make mouse and
 keyboard work.
 
-##bitmap
+
+
+## bitmap
+
 My own bitmap reading(and limited writing) library. Used to load images for
 font rendering etc.
 
-##lua-rote
+
+
+## lua-rote
+
 Because my terminal emulation library didn't work for a long time the 
 terminal emulator currently uses lua-rote.
 Note however that this library is incomplete/missing features, and the project
 that it's binding is abandoned.
 This is TODO
 
-##more?
+
+
+## more?
+
 Maybe I use more librarys somewhere. idk :/
 this is TODO
 
