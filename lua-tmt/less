@@ -1,0 +1,245 @@
+lua_tmt.c: In function ‘input_callback’:
+lua_tmt.c:47:2: warning: enumeration value ‘TMT_MSG_CURSOR’ not handled in switch [-Wswitch]
+  switch (m){
+  ^~~~~~
+lua_tmt.c:39:64: warning: unused parameter ‘p’ [-Wunused-parameter]
+ void input_callback(tmt_msg_t m, TMT *vt, const void *a, void *p) {
+                                                                ^
+lua_tmt.c: In function ‘l_new’:
+lua_tmt.c:173:11: error: expected expression before ‘=’ token
+  TMT *vt; = tmt_open(w, h, input_callback, L, NULL);
+           ^
+lua_tmt.c:173:7: warning: unused variable ‘vt’ [-Wunused-variable]
+  TMT *vt; = tmt_open(w, h, input_callback, L, NULL);
+       ^~
+tmt.c: In function ‘ed’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:157:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(ed)
+ ^~~~~~~
+tmt.c: In function ‘ich’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:171:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(ich)
+ ^~~~~~~
+tmt.c: In function ‘dch’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:181:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(dch)
+ ^~~~~~~
+tmt.c: In function ‘el’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:191:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(el)
+ ^~~~~~~
+tmt.c: In function ‘sgr’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:199:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(sgr)
+ ^~~~~~~
+tmt.c:49:14: warning: unused variable ‘l’ [-Wunused-variable]
+     TMTLINE *l = CLINE(vt);     \
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:199:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(sgr)
+ ^~~~~~~
+tmt.c:48:15: warning: unused variable ‘c’ [-Wunused-variable]
+     TMTPOINT *c = &vt->curs;    \
+               ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:199:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(sgr)
+ ^~~~~~~
+tmt.c:47:16: warning: unused variable ‘s’ [-Wunused-variable]
+     TMTSCREEN *s = &vt->screen; \
+                ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:199:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(sgr)
+ ^~~~~~~
+tmt.c: In function ‘rep’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:222:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(rep)
+ ^~~~~~~
+tmt.c:47:16: warning: unused variable ‘s’ [-Wunused-variable]
+     TMTSCREEN *s = &vt->screen; \
+                ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:222:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(rep)
+ ^~~~~~~
+tmt.c: In function ‘dsr’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:229:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(dsr)
+ ^~~~~~~
+tmt.c:49:14: warning: unused variable ‘l’ [-Wunused-variable]
+     TMTLINE *l = CLINE(vt);     \
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:229:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(dsr)
+ ^~~~~~~
+tmt.c:47:16: warning: unused variable ‘s’ [-Wunused-variable]
+     TMTSCREEN *s = &vt->screen; \
+                ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:229:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(dsr)
+ ^~~~~~~
+tmt.c: In function ‘resetparser’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:235:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(resetparser)
+ ^~~~~~~
+tmt.c:49:14: warning: unused variable ‘l’ [-Wunused-variable]
+     TMTLINE *l = CLINE(vt);     \
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:235:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(resetparser)
+ ^~~~~~~
+tmt.c:48:15: warning: unused variable ‘c’ [-Wunused-variable]
+     TMTPOINT *c = &vt->curs;    \
+               ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:235:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(resetparser)
+ ^~~~~~~
+tmt.c:47:16: warning: unused variable ‘s’ [-Wunused-variable]
+     TMTSCREEN *s = &vt->screen; \
+                ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:235:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(resetparser)
+ ^~~~~~~
+tmt.c: In function ‘consumearg’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:240:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(consumearg)
+ ^~~~~~~
+tmt.c:49:14: warning: unused variable ‘l’ [-Wunused-variable]
+     TMTLINE *l = CLINE(vt);     \
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:240:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(consumearg)
+ ^~~~~~~
+tmt.c:48:15: warning: unused variable ‘c’ [-Wunused-variable]
+     TMTPOINT *c = &vt->curs;    \
+               ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:240:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(consumearg)
+ ^~~~~~~
+tmt.c:47:16: warning: unused variable ‘s’ [-Wunused-variable]
+     TMTSCREEN *s = &vt->screen; \
+                ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:240:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(consumearg)
+ ^~~~~~~
+tmt.c: In function ‘fixcursor’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:246:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(fixcursor)
+ ^~~~~~~
+tmt.c:49:14: warning: unused variable ‘l’ [-Wunused-variable]
+     TMTLINE *l = CLINE(vt);     \
+              ^
+tmt.c:52:52: note: in expansion of macro ‘COMMON_VARS’
+ #define HANDLER(name) static void name (TMT *vt) { COMMON_VARS;
+                                                    ^~~~~~~~~~~
+tmt.c:246:1: note: in expansion of macro ‘HANDLER’
+ HANDLER(fixcursor)
+ ^~~~~~~
+tmt.c: In function ‘writecharatcurs’:
+tmt.c:50:14: warning: unused variable ‘t’ [-Wunused-variable]
+     TMTCHAR *t = vt->tabs->chars
+              ^
+tmt.c:403:5: note: in expansion of macro ‘COMMON_VARS’
+     COMMON_VARS;
+     ^~~~~~~~~~~
+tmt.c:49:14: warning: unused variable ‘l’ [-Wunused-variable]
+     TMTLINE *l = CLINE(vt);     \
+              ^
+tmt.c:403:5: note: in expansion of macro ‘COMMON_VARS’
+     COMMON_VARS;
+     ^~~~~~~~~~~
+make: *** [tmt.so] Fehler 1
