@@ -53,6 +53,12 @@ Loads up hardware wrappers(keyboard, mouse), and renders everything.
 
 
 
+## 7x12b.bmp, 7x12.bmp, cga.bmp, lcd.bmp
+
+these files are used as fonts. Fonts are character tiles indexed from
+top left to right, bottom(starting at 0).
+
+
 
 ## bg.bmp
 
@@ -160,12 +166,6 @@ implementation
 I use many diffrent C and lua librarys, some external, some developed by me,
 and some developed for this project. Some of the files above could be
 used as librarys.
-
-## 7x12b.bmp, 7x12.bmp, cga.bmp, lcd.bmp
-
-these files are used as fonts. Fonts are character tiles indexed from
-top left to right, bottom(starting at 0).
-
 
 
 ## lua-tmt
