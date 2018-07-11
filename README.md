@@ -1,6 +1,8 @@
 stuff
 -----
 
+Everything is _very_ WIP.
+
 The goal is to create a terminal emulator that can run in a self-created
 windowing system on the framebuffer.
 
