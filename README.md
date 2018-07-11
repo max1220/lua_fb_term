@@ -94,6 +94,7 @@ Returns values from the layout for each key.
 Reads uinput for keys.
 Supports callbacks and event ques.
 exports only 1 function, kbd = keyboard.open(config_table).
+
 '''
 kbd:handle_ev(ev) -- mostly internal, handle a uinput ev
 kbd:update_one -- handle one uinput event(warning:slow)
@@ -117,11 +118,13 @@ A keyboard layout is a mapping of uinput scancodes to tables determining return 
 renders a terminal, either to a drawbuffer or to another terminal using unicode
 braile characters.
 exports only 1 function:
+
 '''
 terminal.new(config_table)
 '''
 
 term functions:
+
 '''
 term:update_config(alternative_config) --call after updating the config
 term:render() --render to drawbuffer
@@ -135,6 +138,7 @@ term:draw_unicode() --draws terminal to a unicode-terminal using braile chars
 Implements mice support.
 Works like keyboard, except for mouse input.
 mouse functions:
+
 '''
 mouse:handle_ev(ev)
 x,y = mouse:get_pos() -- get integer position
