@@ -83,7 +83,7 @@ font:load_from_table(font_tbl)
 font:load_from_bmp(name, bmp_path, char_w, char_h, chars_x, chars_y)
 font:load_from_json(json_path, name)
 char_w, char_h = font:get_char_size(name, [scale_w], [scale_h])
-db = function font:render_char_to_db(name, char_id, [scale_w], [scale_h], [fg])
+db = font:render_char_to_db(name, char_id, [scale_w], [scale_h], [fg])
 font:set_default([default_name], [default_bold_name])
 font:_sort_cache() --sorts cache by count of access, improves cache access speed
 font:_clear_cache([leave_top_n]) --clear cache [but leave to n entrys by access]
